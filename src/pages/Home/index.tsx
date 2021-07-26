@@ -33,8 +33,7 @@ export function Home() {
     <>
     <Header />
     <S.Img src={Banner} alt="banner" />
-    <S.Container>
-      
+    <S.Container>    
       
       
       <section>
