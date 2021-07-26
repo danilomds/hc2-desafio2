@@ -14,6 +14,7 @@ export function Header() {
 
       <S.WrapRigt>
         <S.Links to='/register'>Clientes</S.Links>
+        <S.Links to='/products'>Produtos</S.Links>
       </S.WrapRigt>
     </S.Container>
   );

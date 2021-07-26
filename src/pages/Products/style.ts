@@ -25,7 +25,7 @@ export const Form = styled.form`
   align-items: center;
   justify-content: center;
   width: 25rem;
-  height: 26rem;
+  height: 25rem;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
   margin: 2rem;
 `;
@@ -71,5 +71,4 @@ export const Links = styled(Link)`
     filter: brightness(0.9);
   }
 `;
-
 

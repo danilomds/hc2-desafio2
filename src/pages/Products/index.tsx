@@ -3,15 +3,17 @@ import { Header } from '../../components/Header';
 import * as Icon from 'react-feather';
 import * as S from './style';
 
+export function Products() {
+  const [photo, setPhoto] = useState('');
+  const [name, setName] = useState(''); 
+  const [description, setDescription] = useState('');
+  const [price, setPrice] = useState('');
 
-export function Register() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
   const data = {
+    photo,
     name,
-    email,
-    password
+    description,
+    price
   }
     
 
@@ -19,19 +21,26 @@ export function Register() {
     if(values) {
       localStorage.setItem(key, values);    
       alert('Cadastro realizado com sucesso'); 
+      setPhoto('');
       setName('');
-      setEmail('');
-      setPassword('');
+      setDescription('');
+      setPrice('');
     }
-
-}
-  
+}  
 
   return (
   
       <S.Container> 
         <Header />
-        <S.Form >    
+        <S.Form > 
+        <S.Input
+            type="photo"
+            placeholder="  URL"
+            value={photo}
+            onChange={(e) => setPhoto(e.target.value)}
+            required
+          />
+        
           <S.Input
             type="name"
             placeholder="  Nome"
@@ -40,17 +49,17 @@ export function Register() {
             required
           />
           <S.Input
-            type="email"
-            placeholder="  E-mail"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            type="description"
+            placeholder="  Descrição do Produto"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
             required
           />
           <S.Input
-            type="password"
-            placeholder="  Senha"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            type="price"
+            placeholder="  Preço"
+            value={price}
+            onChange={(e) => setPrice(e.target.value)}
             required
           />
 
