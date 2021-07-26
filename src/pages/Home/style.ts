@@ -1,4 +1,4 @@
-import styled  from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   width: 80%;
@@ -18,14 +18,11 @@ export const Container = styled.div`
       border-radius: 5px;
       padding: 12px;
       margin: 10px;
-
     }
-
   }
 `;
 
 export const Img = styled.img`
-width: 100%;
-height: auto;
-
+  width: 100%;
+  height: auto;
 `;
