@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://dmtech.netlify.app/produtos'
+  baseURL: 'https://dmtech.netlify.app:8080/produtos'
 });
 
 
