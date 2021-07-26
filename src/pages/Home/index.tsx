@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Header } from "../../components/Header";
 import * as S from "./style";
+import Banner from '../../assets/asset14.png';
 import api from "../../services/api";
 
 interface IProduct {
@@ -29,8 +30,13 @@ export function Home() {
 
 
   return (
+    <>
+    <Header />
+    <S.Img src={Banner} alt="banner" />
     <S.Container>
-      <Header />
+      
+      
+      
       <section>
         {data.map((prod, index) => (
           <div className="product-content" key={prod.id}>
@@ -45,5 +51,6 @@ export function Home() {
         ))}
       </section>
     </S.Container>
+    </>
   );
 }
