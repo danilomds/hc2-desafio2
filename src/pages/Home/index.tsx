@@ -11,16 +11,9 @@ interface IProduct {
   price: number;
 }
 
-interface IClient {
-  id: number;
-  name: string;
-  email: string;
-  password: string;
-}
 
 export function Home() {
   const [data, setData] = useState<IProduct[]>([]);
-  const [client, setClient] = useState<IClient[]>([]);
 
   useEffect(() => {
     api.get('').then((response) => {
@@ -33,16 +26,6 @@ export function Home() {
     localStorage.setItem(`@Produto-${index}`, productStore);
   };
 
-  useEffect(() => {
-    api.get("").then((response) => {
-      setClient(response.data);
-    });
-  }, []);
-
-  const handleCli = (index: number) => {
-    const clientStore = JSON.stringify(data[index]);
-    localStorage.setItem(`@Clients-${index}`, clientStore);
-  };
 
 
   return (
