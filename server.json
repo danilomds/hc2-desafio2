@@ -1,0 +1,38 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "photo": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-blue-select-2020?wid=470&hei=556&fmt=png-alpha&.v=1604343704000",
+      "name": "iPhone12 blue",
+      "description": "Descrição do produto",
+      "price": 6000
+    },
+    {
+      "id": 2,
+      "photo": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-purple-select-2021?wid=470&hei=556&fmt=png-alpha&.v=1617130317000",
+      "name": "iPhone12 Purple",
+      "description": "Descrição do produto",
+      "price": 4000
+    }
+  ],
+  "clients": [
+    {      
+      "name": "Danilo Mendes",
+      "email": "danilo@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {      
+      "name": "Carlos Alberto",
+      "email": "carlosab@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "name": "Edmar Pereira",
+      "email": "edmar@gmail.com",
+      "password": "123456",
+      "id": 3
+    }
+  ]
+}
