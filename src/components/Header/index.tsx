@@ -6,7 +6,7 @@ export function Header() {
   return (
     <S.Container>
       <S.WrapLeft>
-        <img src={Logo} alt="" />
+        <img src={Logo} alt="logo" />
         <h3>DM.tech</h3>
       </S.WrapLeft>
 
